@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Image Gallery</title>
+		<link href="../../../dist/output.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div
+			class="bg-cyan-200 p-2 min-h-screen flex items-center justify-center"
+		>
+			<div class="bg-white rounded-xl shadow-2xl p-6 md:p-40 space-y-10">
+				<!-- Menu  -->
+				<div
+					class="flex justify-center items-center flex-col space-y-6 md:space-y-0 md:space-x-6 md:justify-end md:flex-row md:mb-24"
+				>
+					<div
+						class="relative after:content-[''] after:absolute after:top-full after:mt-2 after:right-2 after:left-2 after:h-[2px] after:bg-black after:opacity-0 hover:after:opacity-100 after:duration-500 hover:cursor-pointer"
+					>
+						Vector
+					</div>
+					<div
+						class="relative after:content-[''] after:absolute after:top-full after:mt-2 after:right-2 after:left-2 after:h-[2px] after:bg-black after:opacity-0 hover:after:opacity-100 after:duration-500 hover:cursor-pointer"
+					>
+						Illustrations
+					</div>
+					<div
+						class="relative after:content-[''] after:absolute after:top-full after:mt-2 after:right-2 after:left-2 after:h-[2px] after:bg-black after:opacity-0 hover:after:opacity-100 after:duration-500 hover:cursor-pointer"
+					>
+						Images
+					</div>
+					<div
+						class="relative after:content-[''] after:absolute after:top-full after:mt-2 after:right-2 after:left-2 after:h-[2px] after:bg-black after:opacity-0 hover:after:opacity-100 after:duration-500 hover:cursor-pointer"
+					>
+						Icons
+					</div>
+				</div>
+
+				<!-- Search -->
+				<div
+					class="flex flex-col justify-between space-y-5 md:flex-row md:space-y-0"
+				>
+					<div class="flex border-b">
+						<input
+							type="text"
+							class="focus:outline-none placeholder:font-thin border-none ml-6 md:w-80"
+							placeholder="Search"
+						/>
+						<button>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="w-8 text-gray-300 duration-200 hover:scale-110"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								fill="none"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path
+									stroke="none"
+									d="M0 0h24v24H0z"
+									fill="none"
+								/>
+								<circle cx="10" cy="10" r="7" />
+								<line x1="21" y1="21" x2="15" y2="15" />
+							</svg>
+						</button>
+					</div>
+
+					<button
+						class="bg-black text-white shadow-2xl rounded-md border px-12 py-3 text-lg font-normal duration-200 hover:bg-white hover:text-black border-black"
+					>
+						Upload
+					</button>
+				</div>
+
+				<div class="columns-1 md:columns-2 xl:columns-3">
+					<div class="group mb-4 relative">
+						<img src="img1.jpg" class="w-full h-full" alt="" />
+						<div
+							class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/40 via-black/10 to-black/80 opacity-0 group-hover:opacity-100 duration-500 transition-all flex flex-col"
+						>
+							<div class=""></div>
+							<div
+								class="mt-auto flex items-center p-2.5 px-4 justify-between text-white"
+							>
+								<div class="space-y-1">
+									<div class="text-sm font-medium">
+										Daniel Pelaez Duque
+									</div>
+									<div class="text-xs">
+										Available for hire
+									</div>
+								</div>
+								<button class="bg-white rounded-md p-1">
+									<img src="download.svg" alt="" />
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="group mb-4 relative">
+						<img src="img2.jpg" class="w-full h-full" alt="" />
+						<div
+							class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/40 via-black/10 to-black/80 opacity-0 group-hover:opacity-100 duration-500 transition-all flex flex-col"
+						>
+							<div class=""></div>
+							<div
+								class="mt-auto flex items-center p-2.5 px-4 justify-between text-white"
+							>
+								<div class="space-y-1">
+									<div class="text-sm font-medium">
+										Daniel Pelaez Duque
+									</div>
+									<div class="text-xs">
+										Available for hire
+									</div>
+								</div>
+								<button class="bg-white rounded-md p-1">
+									<img src="download.svg" alt="" />
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="group mb-4 relative">
+						<img src="img3.jpg" class="w-full h-full" alt="" />
+						<div
+							class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/40 via-black/10 to-black/80 opacity-0 group-hover:opacity-100 duration-500 transition-all flex flex-col"
+						>
+							<div class=""></div>
+							<div
+								class="mt-auto flex items-center p-2.5 px-4 justify-between text-white"
+							>
+								<div class="space-y-1">
+									<div class="text-sm font-medium">
+										Daniel Pelaez Duque
+									</div>
+									<div class="text-xs">
+										Available for hire
+									</div>
+								</div>
+								<button class="bg-white rounded-md p-1">
+									<img src="download.svg" alt="" />
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="group mb-4 relative">
+						<img src="img4.jpg" class="w-full h-full" alt="" />
+						<div
+							class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/40 via-black/10 to-black/80 opacity-0 group-hover:opacity-100 duration-500 transition-all flex flex-col"
+						>
+							<div class=""></div>
+							<div
+								class="mt-auto flex items-center p-2.5 px-4 justify-between text-white"
+							>
+								<div class="space-y-1">
+									<div class="text-sm font-medium">
+										Daniel Pelaez Duque
+									</div>
+									<div class="text-xs">
+										Available for hire
+									</div>
+								</div>
+								<button class="bg-white rounded-md p-1">
+									<img src="download.svg" alt="" />
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="group mb-4 relative">
+						<img src="img5.jpg" class="w-full h-full" alt="" />
+						<div
+							class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/40 via-black/10 to-black/80 opacity-0 group-hover:opacity-100 duration-500 transition-all flex flex-col"
+						>
+							<div class=""></div>
+							<div
+								class="mt-auto flex items-center p-2.5 px-4 justify-between text-white"
+							>
+								<div class="space-y-1">
+									<div class="text-sm font-medium">
+										Daniel Pelaez Duque
+									</div>
+									<div class="text-xs">
+										Available for hire
+									</div>
+								</div>
+								<button class="bg-white rounded-md p-1">
+									<img src="download.svg" alt="" />
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="group mb-4 relative">
+						<img src="img6.jpg" class="w-full h-full" alt="" />
+						<div
+							class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/40 via-black/10 to-black/80 opacity-0 group-hover:opacity-100 duration-500 transition-all flex flex-col"
+						>
+							<div class=""></div>
+							<div
+								class="mt-auto flex items-center p-2.5 px-4 justify-between text-white"
+							>
+								<div class="space-y-1">
+									<div class="text-sm font-medium">
+										Daniel Pelaez Duque
+									</div>
+									<div class="text-xs">
+										Available for hire
+									</div>
+								</div>
+								<button class="bg-white rounded-md p-1">
+									<img src="download.svg" alt="" />
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
