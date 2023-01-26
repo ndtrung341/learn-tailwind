@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login Modal</title>
+		<link href="../../../dist/output.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="min-h-screen bg-red-50 flex items-center justify-center">
+			<div class="flex rounded-2xl relative bg-white shadow-2xl">
+				<!-- col-left -->
+				<div class="p-6 md:p-20">
+					<h1 class="font-mono mb-5 text-4xl font-bold">Log In</h1>
+					<p
+						class="max-w-sm mb-12 font-sans font-light text-gray-600"
+					>
+						Log in to your account to upload or download pictures,
+						videos or music.
+					</p>
+					<form class="space-y-6">
+						<input
+							type="text"
+							class="w-full p-6 border border-gray-300 rounded-md placeholder:font-sans placeholder:font-light"
+							placeholder="Enter your email address"
+						/>
+						<div
+							class="flex flex-col md:flex-row space-y-4 md:space-y-0 items-center md:justify-between"
+						>
+							<a href="" class="font-thin text-cyan-700k"
+								>Forgot password</a
+							>
+							<button
+								class="sm:w-full md:w-auto flex items-center justify-center bg-cyan-700 text-white py-6 px-8 rounded-md shadow-lg space-x-3 hover:bg-opacity-80 hover:-translate-y-0.5 transition duration-150"
+							>
+								<span>Next</span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="w-7"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#ffffff"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path
+										stroke="none"
+										d="M0 0h24v24H0z"
+										fill="none"
+									></path>
+									<line x1="5" y1="12" x2="19" y2="12"></line>
+									<line
+										x1="13"
+										y1="18"
+										x2="19"
+										y2="12"
+									></line>
+									<line x1="13" y1="6" x2="19" y2="12"></line>
+								</svg>
+							</button>
+						</div>
+					</form>
+					<div class="mt-12 border-b border-b-gray-300"></div>
+					<p class="py-6 text-gray-600 font-thin text-center">
+						or log in with
+					</p>
+					<div
+						class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3"
+					>
+						<button
+							class="flex-1 p-3 px-4 border border-slate-400 rounded-md flex items-center justify-center space-x-3 text-lg hover:shadow-lg hover:-translate-y-0.5 duration-100 transition"
+						>
+							<img src="facebook.png" alt="" class="w-6 h-6" />
+							<span>Facebook</span>
+						</button>
+						<button
+							class="flex-1 p-3 px-4 border border-slate-400 rounded-md flex items-center justify-center space-x-3 text-lg hover:shadow-lg hover:-translate-y-0.5 duration-100 transition"
+						>
+							<img src="google.png" alt="" class="w-6 h-6" />
+							<span>Google</span>
+						</button>
+					</div>
+				</div>
+				<!-- col-right -->
+				<div class="hidden md:block">
+					<img src="image.jpg" alt="" class="w-[400px] h-full" />
+				</div>
+
+				<div
+					class="absolute w-10 h-10 rounded-full top-5 right-5 flex items-center content-center place-content-center bg-slate-200 md:bg-white hover:-translate-y-1 transition"
+					style="font-size: 25px"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="w-6 h-6 text-black group-hover:text-gray-600"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path
+							stroke="none"
+							d="M0 0h24v24H0z"
+							fill="none"
+						></path>
+						<line x1="18" y1="6" x2="6" y2="18"></line>
+						<line x1="6" y1="6" x2="18" y2="18"></line>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
