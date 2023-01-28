@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+	background-image: url('../images/bg-header-desktop.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: top;
+}
+
+.section-title {
+	@apply text-5xl font-semibold text-center text-dark-grey;
+}
+
+h2 {
+	@apply text-4xl !important;
+}
+
+h3 {
+	@apply text-2xl !important;
+}
+
+.section-container {
+	@apply container mx-auto py-16 px-8 lg:px-10;
+}
+
+.access .section-container {
+	@apply pb-0 !important;
+}
+
+.section-desc {
+	@apply text-lg text-light-grey text-center max-w-[43rem] mx-auto leading-7 mt-6;
+}
+
+.hero-btn-group {
+	@apply flex flex-col md:flex-row justify-center space-y-5 md:space-x-5 md:space-y-0 mt-12;
+}
+
+.hero-btn {
+	@apply w-full md:w-auto py-4 px-8 text-white rounded-full shadow-xl hover:bg-opacity-80 transition cursor-pointer tracking-widest;
+}
+
+@media (max-width: 767px) {
+	.hero {
+		background-image: url('../images/bg-header-mobile.png');
+	}
+}
+
+@media (min-width: 767px) {
+	.feature * {
+		text-align: left !important;
+	}
+}
+
+.feature {
+	@apply flex flex-col md:flex-row px-10 md:px-0 space-y-12 md:space-y-0 md:space-x-24 md:pr-8;
+}
+
+.feature p {
+	@apply mt-3;
+}
+
+.menu {
+	@apply grid grid-cols-1 md:gap-x-16 gap-y-4 md:grid-cols-3;
+}
+
+.menu-link {
+	@apply text-light-grey text-center md:text-left cursor-pointer hover:text-strong-cyan duration-200 transition font-semibold;
+}
+
+.social {
+	@apply flex space-x-10 md:space-x-6;
+}

@@ -1,0 +1,15 @@
+{
+	"devDependencies": {
+		"tailwindcss": "^3.2.4"
+	},
+	"name": "clipboard",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"watch": "tailwindcss -i ./input.css -o ./css/style.css --watch",
+		"build": "tailwindcss -i ./input.css -o ./css/style.css"
+	},
+	"author": "",
+	"license": "ISC",
+	"description": ""
+}
