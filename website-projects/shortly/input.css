@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.resize-animation-stopper * {
+	animation: none !important;
+	transition: none !important;
+}
+html {
+	font-family: Poppins, sans-serif;
+}
+.nav {
+	@apply flex flex-col md:flex-row md:items-center md:justify-between absolute top-full mt-4 md:mt-0 md:static bg-slate-800 md:bg-white w-full px-8 py-10 rounded-xl text-base space-y-10 md:space-y-0 md:p-0 md:ml-12;
+}
+
+.nav.mobile {
+	@apply opacity-0 transition-all duration-100 absolute;
+}
+
+.nav.mobile .nav-link {
+	@apply text-white hover:text-white;
+}
+
+.hambuger.active + .nav.mobile {
+	@apply opacity-100 flex;
+}
+
+.nav-link {
+	@apply text-white font-poppins font-semibold hover:text-slate-800 md:text-slate-400;
+}
+
+.btn {
+	@apply inline-block bg-cyan-500 py-3 px-6 text-white hover:text-white hover:bg-cyan-400 font-semibold;
+}
+
+.btn--sm {
+	@apply py-2 px-5;
+}
+
+.btn--lg {
+	@apply py-3.5 px-10;
+}
+
+.hambuger {
+	@apply flex md:hidden flex-col space-y-2;
+}
+
+.hambuger span {
+	@apply w-7 h-[3px] bg-slate-600 transition-all duration-300;
+}
+
+.hambuger.active span:last-child {
+	opacity: 0;
+}
+
+.hambuger.active span:first-child {
+	transform-origin: 0% 0%;
+	transform: rotate(45deg) translate(8px, -2px);
+}
+.hambuger.active span:nth-child(2) {
+	transform-origin: 0% 100%;
+	transform: rotate(-45deg) translate(-4px, 12px);
+}
+
+.shorten__form {
+	@apply p-8 md:p-12 rounded-lg flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4;
+	background: url('../images/bg-shorten-desktop.svg') left 20% / cover
+		no-repeat rgb(59, 48, 84);
+	cursor: pointer;
+}
+
+.section__content {
+	@apply flex flex-col space-y-4 items-center;
+}
+
+.section__title {
+	@apply text-3xl md:text-4xl font-bold text-center;
+}
+
+.section__desc {
+	@apply text-slate-500 text-center max-w-md;
+}
+
+.url_input {
+	@apply w-full focus:outline-none bg-white px-6 py-3.5 rounded-lg placeholder:text-slate-600;
+}
+
+.url_input.error {
+	@apply ring-2 ring-red-400 placeholder:text-red-500 !important;
+}
+
+.item {
+	@apply bg-white md:w-[calc(33.3333%-28px)] md:ml-7 relative z-10 md:px-8 pb-10;
+}
+
+.item__icon {
+	@apply left-1/2 -translate-x-1/2 md:-translate-x-0 md:left-0 p-6 rounded-full bg-slate-800 inline-block relative -top-[44px] -mb-3;
+}
+
+.item h4 {
+	@apply font-bold text-xl capitalize text-center md:text-left mb-5;
+}
+
+.item p {
+	@apply mx-auto md:mx-0 text-slate-400 text-center md:text-left max-w-xs;
+}
+.boots {
+	background: url('../images/bg-boost-desktop.svg') left 40% / cover no-repeat
+		rgb(59, 48, 84);
+	cursor: pointer;
+}
+
+.nav-link {
+	@apply block text-slate-600;
+}
+
+.btn-copied {
+	@apply bg-slate-800 max-w-xs;
+}
