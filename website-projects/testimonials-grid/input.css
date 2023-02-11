@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+	@apply p-12 rounded-xl space-y-6 text-white;
+}
+
+.card.light {
+	@apply text-black;
+}
+
+.card-header {
+	@apply flex space-x-4 items-center;
+}
+
+.person-img {
+	@apply flex-shrink-0 w-10 h-10 rounded-full overflow-hidden;
+}
+
+.person-img img {
+	@apply object-cover;
+}
+
+.person-name {
+	@apply text-sm;
+}
+
+.person-name + div {
+	@apply text-sm opacity-70;
+}
+
+.card-content {
+	@apply space-y-6;
+}
+
+.card-content > *:first-child {
+	@apply text-xl font-bold;
+}
+
+.card-content > *:last-child {
+	@apply opacity-70;
+}
